@@ -15,7 +15,7 @@ public class UDPTest {
             byte[] data = new byte[1024];
             DatagramPacket packet = new DatagramPacket(data, data.length);//接受信息的数组以及接收的长度
             //3.接收客户端发送的数据
-            System.out.println("***服务器端已经启动，等待客户端发送数据******");
+            System.out.println("***服务器端已经启动，等待客户端发送数据***");
             socket.receive(packet);//此方法在接收到数据报之前会一直阻塞
             //4.读取这个数据
             //实际上信息已经保存在字节数组当中，所以这个时候直接转化就好了
